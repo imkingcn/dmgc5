@@ -733,7 +733,7 @@
 
     invoke-virtual {v0, v3}, Lepy;->addPreferencesFromResource(I)V
 
-    invoke-static/range {p0 .. p0}, Lcom/dmgc/ota/OTAUtils;->hookPreference(Landroid/preference/PreferenceFragment;)V
+    invoke-static/range {p0 .. p0}, Lme/thedise/ota/OTAUtils;->hookPreference(Landroid/preference/PreferenceFragment;)V
 
     const-string v3, "prefscreen_top"
 

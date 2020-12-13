@@ -365,7 +365,7 @@
 
     const-string v0, "google"
 
-    const-string v1, "walleye"
+    const-string v1, "bonito"
 
     sget-object v2, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
 
