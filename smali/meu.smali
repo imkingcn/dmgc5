@@ -29,23 +29,20 @@
 .method public final run()V
     .locals 3
 
+    # фикс вылета отмены астро  
+
     iget-object v0, p0, Lmeu;->a:Ljava/lang/String;
 
     iget-object v1, p0, Lmeu;->b:Ljava/lang/Throwable;
 
-    if-eqz v0, :cond_0
-
-    new-instance v2, Lmev;
-
-    invoke-direct {v2, v0, v1}, Lmev;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v2
-
-    :cond_0
+    if-nez v0, :cond_0
 
     new-instance v0, Lmev;
 
     invoke-direct {v0, v1}, Lmev;-><init>(Ljava/lang/Throwable;)V
 
     throw v0
+
+    :cond_0
+    return-void
 .end method
