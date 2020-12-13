@@ -690,9 +690,13 @@
 
     invoke-interface {v0, v4, v5}, Lcmc;->c(Lcly;Z)V
 
+    # manual_focus_infinity
+
     sget-object v4, Lclw;->e:Lcly;
 
-    invoke-interface {v0, v4, v5}, Lcmc;->b(Lcly;Z)V
+    invoke-interface {v0, v4, v7}, Lcmc;->b(Lcly;Z)V
+
+    # end
 
     sget-object v4, Lclw;->f:Lcly;
 
